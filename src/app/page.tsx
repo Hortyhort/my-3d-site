@@ -1,18 +1,22 @@
 import Scene from '@/components/Scene';
-import TextReveal from '@/components/TextReveal'; // Import the new component
+import TextReveal from '@/components/TextReveal';
+import Loader from '@/components/Loader';
 
 export default function Home() {
   return (
     <main className="relative w-full min-h-screen text-white selection:bg-pink-500 selection:text-white">
       
+      {/* The Loader sits on top of everything (z-50) */}
+      <Loader />
+      
       <Scene />
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen pointer-events-none">
         <div className="text-center space-y-6 p-10">
-          <h1 className="text-6xl md:text-9xl font-bold tracking-tighter pointer-events-auto mix-blend-difference">
+          <h1 className="text-6xl md:text-9xl font-bold tracking-tighter pointer-events-auto text-gray-300">
             IMMERSE
           </h1>
-          <p className="text-xl font-light tracking-wide uppercase text-gray-400 pointer-events-auto">
+          <p className="text-xl font-light tracking-wide uppercase text-gray-500 pointer-events-auto">
             Next.js • R3F • Tailwind
           </p>
           
