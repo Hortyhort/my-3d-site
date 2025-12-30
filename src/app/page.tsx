@@ -41,7 +41,7 @@ export default function Home() {
           </TextReveal>
           
           <div className="mt-20 text-lg text-gray-300 max-w-xl leading-relaxed">
-             <p>This text block is standard HTML, but the headers above use the "Masked Reveal" technique. Notice how the words slide up from invisible lines rather than just fading in.</p>
+             <p>This text block is standard HTML, but the headers above use the &ldquo;Masked Reveal&rdquo; technique. Notice how the words slide up from invisible lines rather than just fading in.</p>
           </div>
         </div>
 
